@@ -1,31 +1,34 @@
----
+\---
+
 title: "Blog 3"
-date: 2024-01-01
-weight: 1
+date: 2026-11-23
+weight: 2
 chapter: false
-pre: " <b> 3.3. </b> "
+pre: "  **3.2.**  "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# AWS ACCESS KEY BỊ LỘ TRÊN GITHUB: AWS ĐÃ TỰ ĐỘNG QUARANTINE, VẬY CHÚNG TA CÒN PHẢI LÀM GÌ?
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+Trước đây, khi đọc về sự cố lộ AWS Access Key, mình từng nghĩ AWS đã có cơ chế tự động phát hiện và xử lý nên rủi ro không quá đáng lo. Nhưng khi tìm hiểu kỹ hơn, mình nhận ra suy nghĩ đó chỉ đúng một phần: AWS có thể giúp phát hiện và hạn chế thiệt hại, nhưng không có nghĩa tài khoản của chúng ta đã an toàn. Bài viết giải thích AWS thực sự làm gì khi key bị lộ, các bước cần làm tiếp theo và cách phòng ngừa.
 
 Các điểm chính cần nắm:
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+* AWS có cơ chế phát hiện credential bị công khai trên các nguồn như GitHub. Khi phát hiện, AWS có thể áp dụng quarantine policy (**AWSCompromisedKeyQuarantineV3** hoặc **V4**) cho IAM identity liên quan và gửi thông báo qua AWS Health hoặc Support Case.
+* Trong một thử nghiệm của Unit 42, AWS gắn policy V3 chỉ khoảng 10 giây sau khi key bị công khai. Đây là kết quả của một thử nghiệm cụ thể, không phải thời gian phản ứng được đảm bảo trong mọi trường hợp.
+* Quarantine policy **không** vô hiệu hóa access key. Nó chỉ bổ sung quyền Deny cho một số hành động cụ thể, còn các hành động khác vẫn phụ thuộc vào quyền IAM của identity đó.
+* **Bước 1 – Cô lập credential:** xác định IAM user sở hữu key, đánh giá phạm vi quyền và chuyển key sang trạng thái Inactive. Chưa nên xóa key ngay để tiện đối chiếu.
+* **Bước 2 – Khôi phục quyền truy cập hợp lệ:** xác định workload đang dùng key cũ, cập nhật credential hợp lệ và cân nhắc chuyển sang IAM Role dùng temporary credentials.
+* **Bước 3 – Điều tra bằng CloudTrail:** xem API nào được gọi, thời điểm, IP nguồn, Region và các thay đổi bất thường về IAM. Cần dùng một principal quản trị độc lập để điều tra. Event History chủ yếu có management events, còn data events (như truy cập object S3) phải được cấu hình ghi log từ trước.
+* **Bước 4 – Kiểm tra dấu hiệu xâm nhập trên toàn tài khoản:** IAM users/roles/policies mới hoặc bị thay đổi, EC2/Lambda lạ, S3 bị truy cập trái phép, Region ít dùng và chi phí Billing bất thường.
+* **Bước 5 – Hoàn tất khắc phục:** không tự ý gỡ quarantine policy chỉ vì ứng dụng chạy lại; làm theo hướng dẫn trong AWS Support Case.
+* **Phòng ngừa:** dùng IAM Role cho workload, IAM Identity Center/Federation cho người dùng, GitHub Actions OIDC thay cho access key dài hạn, bật GitHub Secret Scanning \& Push Protection và dùng pre-commit hook như git-secrets.
+* Xóa secret khỏi file hoặc commit **không** có nghĩa credential đã an toàn. Nếu đã công khai, phải coi như nó có thể đã bị sao chép và xử lý theo quy trình ứng phó sự cố.
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+Điều mình rút ra: không có cơ chế tự động nào thay thế được việc quản lý danh tính, quyền truy cập và credential đúng cách. Trong môi trường Cloud, bảo mật không chỉ là ngăn truy cập trái phép mà còn phải biết phát hiện, điều tra, cô lập và khôi phục khi sự cố xảy ra.
 
-...Hình ảnh...
+Mọi người đang quản lý AWS credentials cho project cá nhân hoặc project nhóm như thế nào? Đặc biệt với GitHub Actions, mọi người dùng OIDC hay vẫn lưu access key trong GitHub Secrets? Mình muốn tham khảo thêm kinh nghiệm thực tế.
 
-...Link...
+### 
 
-...Hướng dẫn...
+https://www.facebook.com/share/p/1EAiomrDcV/
+
