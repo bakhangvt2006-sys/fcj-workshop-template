@@ -1,20 +1,18 @@
 ---
 title: "Báo cáo thực tập"
-date: 2024-01-01
+date: 2026-11-24
 weight: 1
 chapter: false
 ---
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Nguyễn Bá Khang
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0971632265
 
-&emsp; **Email:** Anguyenvan@gmail.com
-
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
-
+&emsp; **Email:** bakhangvt2006@gmail.com
+&emsp; **Trường:** Đại Học FPT
 &emsp; **Ngành:** Công nghệ thông tin
 
 &emsp; **Lớp:** AWS082025
@@ -23,9 +21,10 @@ chapter: false
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 14/09/2026 đến ngày 14/12/2026
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+<img width="780" height="1170" alt="image" src="https://github.com/user-attachments/assets/eca1d35b-32ee-41ea-ae3e-afb0b04ad83e" />
+
 
 
 
