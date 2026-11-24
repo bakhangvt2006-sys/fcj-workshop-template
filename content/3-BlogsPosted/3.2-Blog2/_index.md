@@ -26,5 +26,6 @@ Key points to remember:
 * **Regular Access Review:** regularly review and revoke permissions that are no longer needed, and detect overly broad policies.
 
 This post is especially useful for anyone operating systems on AWS who wants to tighten permission management, because a small but overly broad IAM permission can lead to major consequences.
+<img width="1322" height="651" alt="IAM drawio (3)" src="https://github.com/user-attachments/assets/edce8fff-1754-4385-8d3a-aed6b423735b" />
 
 https://www.facebook.com/share/p/1JTkReQuuU/
