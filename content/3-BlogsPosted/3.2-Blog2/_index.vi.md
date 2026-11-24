@@ -4,7 +4,7 @@ title: "Blog 2"
 date: 2026-11-23
 weight: 1
 chapter: false
-pre: "  **3.1.**  "
+pre: "  **3.2.**  "
 ---
 
 # MỘT QUYỀN IAM NHỎ CÓ THỂ GÂY RA RỦI RO LỚN NHƯ THẾ NÀO?
