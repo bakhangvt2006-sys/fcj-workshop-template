@@ -4,7 +4,7 @@ title: "Blog 3"
 date: 2026-11-23
 weight: 2
 chapter: false
-pre: "  **3.3.**  "
+pre: " <b> 3.2. </b>  "
 ---
 
 # AWS ACCESS KEY BỊ LỘ TRÊN GITHUB: AWS ĐÃ TỰ ĐỘNG QUARANTINE, VẬY CHÚNG TA CÒN PHẢI LÀM GÌ?
