@@ -1,31 +1,34 @@
----
+\---
+
 title: "Blog 2"
-date: 2024-01-01
+date: 2026-11-24
 weight: 1
 chapter: false
-pre: " <b> 3.2. </b> "
+pre: "  **3.1.**  "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# SESSION POLICIES TRONG AMAZON EKS POD IDENTITY
+# MỘT QUYỀN IAM NHỎ CÓ THỂ GÂY RA RỦI RO LỚN NHƯ THẾ NÀO?
 
-Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+AWS IAM (Identity and Access Management) cho phép quản trị viên kiểm soát quyền truy cập của người dùng đối với các dịch vụ và tài nguyên trên AWS. Tuy nhiên, việc cấp quyền quá rộng, đặc biệt là **AdministratorAccess**, có thể tạo ra lỗ hổng bảo mật nghiêm trọng nếu tài khoản bị lộ thông tin đăng nhập hoặc bị chiếm quyền kiểm soát. Bài viết phân tích những rủi ro khi một tài khoản IAM có quyền quản trị toàn bộ AWS bị xâm nhập và các giải pháp để hạn chế chúng.
 
 Các điểm chính cần nắm:
 
-* Session policy là một IAM policy inline được chỉ định khi tạo hoặc cập nhật Pod Identity association.
-* Quyền hiệu quả = intersection (giao) giữa permissions của IAM role và session policy → session policy chỉ có thể thu hẹp, không thể mở rộng quyền.
-* Giúp tránh tình trạng over-permissioning khi reuse chung một IAM role cho nhiều workloads có nhu cầu khác nhau.
-* Hỗ trợ cả same-account và cross-account (qua IAM role chaining).
-* Giảm đáng kể số lượng IAM roles cần quản lý, tránh chạm giới hạn quota IAM trong cluster lớn.
-* Cấu hình dễ dàng qua AWS Management Console, AWS CLI hoặc AWS SDK khi tạo association giữa Kubernetes ServiceAccount và IAM role.
+* AdministratorAccess là AWS Managed Policy cho phép thực hiện gần như toàn bộ thao tác quản trị trên tài khoản AWS, nên khi bị xâm nhập, kẻ tấn công có thể gây ảnh hưởng trên toàn hệ thống.
+* **Amazon S3:** kẻ tấn công có thể tải xuống, xóa dữ liệu hoặc thay đổi quyền truy cập bucket → rò rỉ thông tin khách hàng và dữ liệu nội bộ.
+* **Amazon EC2:** có thể khởi chạy instance trái phép để đào tiền mã hóa (Cryptojacking) hoặc xóa máy chủ đang chạy → chi phí tăng cao và hệ thống bị gián đoạn.
+* **Amazon RDS:** có thể xóa database, xóa snapshot hoặc thay đổi thiết lập bảo mật → mất dữ liệu và ảnh hưởng ứng dụng.
+* **AWS IAM:** có thể tạo user/role mới, gắn policy quản trị và tạo Access Keys để duy trì quyền truy cập → việc xử lý sự cố trở nên phức tạp hơn.
+* **AWS CloudTrail:** có thể dừng hoặc thay đổi cấu hình ghi log → mất khả năng giám sát và điều tra nếu log không được bảo vệ độc lập.
+* **Least Privilege:** chỉ cấp những quyền thực sự cần thiết, tránh dùng AdministratorAccess khi không có nhu cầu quản trị.
+* **MFA:** bật xác thực đa yếu tố cho các tài khoản quan trọng để bảo vệ khi mật khẩu bị lộ.
+* **IAM Roles và Temporary Credentials:** ưu tiên thông tin xác thực tạm thời thay vì lưu Access Keys dài hạn trong ứng dụng.
+* **Permission Boundaries:** đặt giới hạn quyền tối đa mà IAM User hoặc Role có thể nhận được.
+* **CloudTrail Monitoring:** theo dõi hoạt động API, đặc biệt là các thay đổi liên quan đến IAM và cấu hình bảo mật.
+* **Regular Access Review:** thường xuyên kiểm tra, thu hồi quyền không còn cần thiết và phát hiện policy có phạm vi quá rộng.
 
-Tính năng này đặc biệt hữu ích khi bạn có nhiều ứng dụng chạy trên cùng một IAM role nhưng cần giới hạn quyền khác nhau (ví dụ: một pod chỉ đọc S3 bucket cụ thể, pod khác chỉ gọi một số API nhất định).
+Bài viết đặc biệt hữu ích cho những ai đang vận hành hệ thống trên AWS và muốn siết chặt việc cấp quyền, vì một quyền IAM nhỏ nhưng quá rộng cũng có thể dẫn đến hậu quả lớn.
 
-...Hình ảnh...
+### 
 
-...Link...
+https://www.facebook.com/share/p/1JTkReQuuU/
 
-...Hướng dẫn...

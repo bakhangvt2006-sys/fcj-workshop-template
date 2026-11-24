@@ -1,31 +1,30 @@
 ---
-title: "Blog 2"
-date: 2024-01-01
+title: "Blog 1"
+date: 2025-10-01
 weight: 1
 chapter: false
-pre: " <b> 3.2. </b> "
+pre: " <b> 3.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# HOW CAN A SMALL IAM PERMISSION CAUSE A BIG RISK?
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+AWS IAM (Identity and Access Management) lets administrators control user access to AWS services and resources. However, granting overly broad permissions, especially **AdministratorAccess**, can create serious security vulnerabilities if the account's credentials are leaked or the account is compromised. This post analyzes the risks when an IAM account with full administrative access to AWS is breached, and the solutions to reduce them.
 
-Key points to know:
+Key points to remember:
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+* AdministratorAccess is an AWS Managed Policy that allows almost every administrative action in an AWS account, so if it is compromised, an attacker can affect the entire system.
+* **Amazon S3:** an attacker can download or delete data, or change bucket access permissions → leakage of customer information and internal data.
+* **Amazon EC2:** an attacker can launch unauthorized instances for cryptocurrency mining (Cryptojacking) or delete running servers → higher costs and service disruption.
+* **Amazon RDS:** an attacker can delete databases, delete snapshots, or change security settings → data loss and impact on applications.
+* **AWS IAM:** an attacker can create new users/roles, attach administrator policies, and create Access Keys to maintain access → incident response becomes more complicated.
+* **AWS CloudTrail:** an attacker can stop or change logging configuration → loss of monitoring and investigation capability if logs are not protected independently.
+* **Least Privilege:** grant only the permissions that are truly needed, and avoid AdministratorAccess when administration is not required.
+* **MFA:** enable multi-factor authentication for important accounts to protect them when passwords are leaked.
+* **IAM Roles and Temporary Credentials:** prefer temporary credentials over storing long-term Access Keys in applications.
+* **Permission Boundaries:** set the maximum permissions that an IAM User or Role can receive.
+* **CloudTrail Monitoring:** monitor API activity, especially changes related to IAM and security configuration.
+* **Regular Access Review:** regularly review and revoke permissions that are no longer needed, and detect overly broad policies.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+This post is especially useful for anyone operating systems on AWS who wants to tighten permission management, because a small but overly broad IAM permission can lead to major consequences.
 
-...Image...
-
-...Link...
-
-...Guide...
+https://www.facebook.com/share/p/1JTkReQuuU/
