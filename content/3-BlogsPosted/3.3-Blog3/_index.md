@@ -4,7 +4,7 @@ title: "Blog 3"
 date: 2026-11-23
 weight: 2
 chapter: false
-pre: "  **3.2.**  "
+pre: "  **3.3.**  "
 ---
 
 # AWS ACCESS KEY LEAKED ON GITHUB: AWS AUTOMATICALLY QUARANTINED IT, SO WHAT ELSE DO WE NEED TO DO?
