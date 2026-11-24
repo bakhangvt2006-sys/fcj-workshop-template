@@ -1,126 +1,121 @@
----
+\---
+
 title: "Event 2"
-date: 2024-01-01
-weight: 1
+date: 2026-09-29
+weight: 2
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: "  **4.2.**  "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# Event Report: “AWS Cloud \& AI Day Hanoi 2026”
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+### General Information
 
-### Event Objectives
+* **Event:** AWS Cloud \& AI Day Hanoi 2026
+* **Time:** 09:00 – 17:00, September 29, 2026
+* **Location:** 26th Floor, Bitexco Financial Tower, 2 Hai Trieu Street, Ho Chi Minh City
+* **Role:** Participant
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+### Why I Attended and What I Expected
 
-### Speakers
+* Understand why cloud, Generative AI, and Agentic AI are moving out of the lab and into real enterprise operations.
+* Catch up on how to build cloud-native applications, infrastructure, data platforms, workload identity, and AI governance.
+* See how Vietnamese enterprises and AWS modernize systems at scale.
+* Learn how security, governance, observability, and human oversight must grow as AI becomes more autonomous.
+* Connect the event's content to my own direction in cybersecurity and cloud security.
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+### Guests and Speakers
+
+* **Dr. Werner Vogels** – CTO, Amazon.com, keynote speaker
+* **Eric Yeo** – Country General Manager for Malaysia, Vietnam \& Indochina, AWS
+* **Mai Le** – Director of Product Management, Katalon
+* **Dr. Jens Lottner** – Chief Executive Officer, Techcombank
+* Experts, architects, and technology leaders from AWS, Katalon, Techcombank, TCBS, Techcom Life, VPBank, and other organizations
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### &#x20;From Cloud-Native Architecture to Agentic AI
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+* The trend goes beyond “moving servers to the cloud” toward building flexible, highly automated systems based on containers, Kubernetes, serverless, event-driven architecture, and managed services.
+* Platform Engineering and Internal Developer Platforms provide ready-made “Golden Paths”, so developers wait less on manual ticket approvals to get infrastructure.
+* The tools mentioned include Amazon EKS, Crossplane, Terragrunt, Backstage, FluxCD, and GitOps, which make deployments consistent, repeatable, and easy to audit.
 
-#### Transitioning to modern application architecture – Microservices
+#### &#x20;Taking AI Agents from Prototype to Production
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+Building a working agent is easy; keeping it safe in operation is hard. Four pillars must be met:
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+* **Operational excellence:** reliability, error handling, latency, and continuous monitoring.
+* **Data governance:** who owns the data, how fresh it is, its quality, and who can access it.
+* **Security and trust:** control over identity, allowed tools, permissions, and sensitive information.
+* **Human oversight:** actions with high impact or that cannot be undone must have a responsible person.
 
-#### Domain-Driven Design (DDD)
+Sessions on Amazon Bedrock, Bedrock AgentCore, Strands Agents, Model Context Protocol (MCP), and the ReAct model showed how an agent reasons, looks up information, calls tools, retains context, and acts within a defined permission scope.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### &#x20;Identity, Least Privilege, and AI Security
 
-#### Event-Driven Architecture
+* Instead of only removing long-lived access keys, the new direction is to give workloads an identity that can be verified across multiple trust boundaries.
+* Key mechanisms include AWS IAM, AWS STS (short-lived credentials), trust policies, session policies, session tags, source identity, and ABAC, applied to EC2, ECS/Fargate, Lambda, EKS, CI/CD, multi-account systems, and AI agents.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### &#x20;AI Governance and Data Security
 
-#### Compute Evolution
+* Enterprise AI is not just about choosing a model; it is a data and governance problem: accuracy, freshness, provenance, ownership, access control, evidence behind answers, and decision traceability.
+* The security chain is summarized as: **Identity → Data → Model → Tools → Agent → Action → Audit**.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### &#x20;Security Observability for AI Applications
 
-#### Amazon Q Developer
+The traditional four golden signals (latency, errors, traffic, saturation) need to be extended with:
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+* **Cost:** token consumption and unusual spikes.
+* **Safety:** personal data exposure, prompt injection, and tools used for the wrong purpose.
+* **Quality:** hallucinations and inaccurate answers.
 
-### Key Takeaways
+Monitoring data should be combined from infrastructure, security events, data access, and agent behavior.
 
-#### Design Mindset
+#### &#x20;AI-Assisted Software Development, Done Securely
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+* Kiro and AI-DLC bring AI into the entire development lifecycle: planning, design, coding, testing, documentation, deployment, technical debt handling, and modernization. TCBS reported about a 26% reduction in development time.
+* The conditions are verification, security review, governance, human approval, and DevSecOps integration.
 
-#### Technical Architecture
+#### &#x20;Cloud Modernization and Enterprise Security
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+* Cases from Techcombank, Techcom Life, TCBS, VPBank, and Katalon centered on application and database modernization, containerization, data platform consolidation, infrastructure automation, observability, compliance, and resilience.
+* For data-residency requirements, AWS introduced the Local Zone in Hanoi and second-generation AWS Outposts. The common challenge is balancing security, compliance, reliability, performance, cost, and business agility.
 
-#### Modernization Strategy
+### Lessons Learned
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+#### Security Mindset
 
-### Applying to Work
+* **Identity is a security boundary.** Every workload, pipeline, service, and AI agent should have its own identity with short-lived credentials and least-privilege access.
+* **Protect the whole AI chain** from identity to audit, and let humans decide at high-risk steps.
+* **Extend monitoring** to AI behavior, data access, safety, quality, and cost.
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+#### Architecture and Engineering
 
-### Event Experience
+* Prefer reproducible and traceable infrastructure (managed services, containers, serverless, IaC, GitOps) over logging in via SSH to make manual fixes.
+* Combine IAM, STS, ABAC, and multi-account access with trustworthy data sources.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+#### AI and Cybersecurity
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+* Agents must be evaluated on whether they work with the right identity, permissions, data, and evidence, because AI opens new attack surfaces such as prompt injection, data leakage, excessive permissions, unauthorized actions, hallucination, and hard-to-control costs.
+* Cloud Security, DevSecOps, AI Security, and Security Operations are increasingly intertwined.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+### How I Plan to Apply This
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+* Practice least-privilege IAM with short-lived credentials: build a small lab with a role, trust policy, and session tags, then check the traces in the audit logs.
+* Expand monitoring: collect infrastructure logs, identity events, application telemetry, and AI agent activity; explore bringing Wazuh and SIEM into cloud and AI security.
+* Apply GitOps and IaC to infrastructure changes, and set boundaries for permissions, data, logging, and approvals when experimenting with AI agents.
+* Use AI tools to speed up work while keeping security review and human approval, and connect network/endpoint security knowledge with cloud-native security.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+### Personal Reflection
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+The event gave me a broad view of system modernization, agentic AI, and security at enterprise scale.
 
-#### Some event photos
-*Add your event photos here*  
+* Hearing AWS leaders and enterprises share showed me that technology always has to go hand in hand with governance, operations, security, and organizational change.
+* Real-world examples tied cloud and AI knowledge to compliance requirements and true production scale.
+* Automation without governance can raise risk as fast as it raises productivity. The more autonomous a system is, the tighter identity and permission control must be.
+* Security professionals must not only detect attacks but also know how to protect, monitor, and govern AI systems themselves.
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+### Check-in Photos
+
+
+
