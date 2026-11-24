@@ -29,7 +29,8 @@ Các điểm chính cần nắm:
 Mọi người đang quản lý AWS credentials cho project cá nhân hoặc project nhóm như thế nào? Đặc biệt với GitHub Actions, mọi người dùng OIDC hay vẫn lưu access key trong GitHub Secrets? Mình muốn tham khảo thêm kinh nghiệm thực tế.
 
 ### 
-![Uploading image.png…]()
+<img width="1376" height="768" alt="image" src="https://github.com/user-attachments/assets/c3514aa4-a2fd-4188-904c-e8fed855b2f6" />
+
 
 https://www.facebook.com/share/p/1EAiomrDcV/
 
