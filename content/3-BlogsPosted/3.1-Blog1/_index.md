@@ -1,10 +1,10 @@
-\---
+---
 
 title: "Blog 1"
 date: 2026-11-22
 weight: 3
 chapter: false
-pre: "  **3.1.**  "
+pre: " <b> 3.1. </b>  "
 ---
 
 # DOES SQS FIFO REALLY GUARANTEE “EXACTLY-ONCE PROCESSING”?
