@@ -1,31 +1,37 @@
----
+\---
+
 title: "Blog 1"
-date: 2024-01-01
-weight: 1
+date: 2026-11-22
+weight: 3
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: "  **3.1.**  "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# DOES SQS FIFO REALLY GUARANTEE “EXACTLY-ONCE PROCESSING”?
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+An interesting scenario when studying asynchronous systems on AWS: an application receives the event “Order #1042 has been created”. AWS Lambda processes the message from Amazon SQS FIFO and writes to DynamoDB successfully, but the function times out just before it removes the message from SQS. The same message is then received again. If we already use a FIFO queue, why can reprocessing still happen? This post clarifies the difference between duplicate-send prevention, order preservation, and preventing duplicate business effects, based on the AWS Documentation.
 
-Key points to know:
+Key points to remember:
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+* **Standard Queue** offers very high throughput and at-least-once delivery, but messages may be received more than once or out of order. **FIFO Queue** supports ordering within each `MessageGroupId` and message deduplication; different groups can be processed in parallel.
+* SQS FIFO's “exactly-once” is duplicate-send prevention at the messaging layer. It does **not** mean the whole business logic in Lambda runs exactly once.
+* **Deduplication has only a 5-minute window:** if a producer resends the same `MessageDeduplicationId` within 5 minutes, SQS does not add another copy to the queue. If it is resent after that, the message may be treated as new.
+* With content-based deduplication enabled, SQS generates the deduplication ID from the SHA-256 of the **message body**, not including message attributes. So changing attributes does not make a different message for deduplication purposes.
+* **Lambda + SQS can still process duplicates:** event source mappings have at-least-once semantics. If processing fails or times out, the message reappears after the visibility timeout and is received again, even though the data was already written successfully.
+* **Idempotency** means performing the same request multiple times still gives the same business result as performing it once. For example, use DynamoDB `PutItem` with `ConditionExpression: attribute\_not\_exists(eventId)` so a later attempt does not overwrite the existing item.
+* A `PutItem` condition only prevents duplicate writes for that item; it does not create end-to-end exactly-once. If a workflow also sends emails, calls a payment API, or updates multiple systems, you need additional transactions/outbox, a processing state, or downstream API idempotency.
+* **Retry and partial batch response:** by default, if one message in a batch fails, the whole batch may be retried. Enable `ReportBatchItemFailures` to report only the failed messages. For FIFO, stop after the first failure and report all unprocessed messages as well, so ordering is not broken.
+* **Dead-Letter Queue (DLQ):** configure a redrive policy with `maxReceiveCount` to move repeatedly failing messages to a DLQ; a FIFO source queue must use a FIFO DLQ. A DLQ helps isolate and investigate failures, but it can break strict business ordering when reprocessing and does not guarantee messages will eventually succeed on their own.
+* **4 questions when designing an async system:**
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+  1. Must events be processed in order within each group? If so, `MessageGroupId` must represent the right business flow, for example `orderId`.
+  2. If a message reappears after 5 minutes or Lambda retries, is it safe to run the logic again?
+  3. Do the visibility timeout, batch failure handling, and retry policy fit the real processing time?
+  4. If a message fails permanently, how will the operations team detect it, handle it, and redrive the DLQ?
 
-...Image...
+Conclusion: “exactly-once delivery/deduplication” at the messaging layer is different from “exactly-once business effect” at the application layer. A reliable workflow needs FIFO semantics, visibility timeout, retry/DLQ, idempotency, and side-effect control designed together.
 
-...Link...
+### 
 
-...Guide...
+https://www.facebook.com/share/p/1BmMVcWPia/
+
