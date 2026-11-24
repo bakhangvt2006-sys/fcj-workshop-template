@@ -116,8 +116,8 @@ Buổi sự kiện cho mình cái nhìn rộng về việc hiện đại hóa h�
 * Người làm bảo mật không chỉ phát hiện tấn công mà còn phải biết bảo vệ, giám sát và quản trị chính các hệ thống AI.
 
 ### Hình ảnh check-in
-<img width="400" height="1000" alt="image" src="https://github.com/user-attachments/assets/6b879863-b277-4418-9f71-932996846950" />
-<img width="400" height="1000" alt="image" src="https://github.com/user-attachments/assets/b2ccd5d2-24d1-4ef4-911f-1838e00c2fa7" />
+<img width="400" height="800" alt="image" src="https://github.com/user-attachments/assets/6b879863-b277-4418-9f71-932996846950" />
+<img width="400" height="800" alt="image" src="https://github.com/user-attachments/assets/b2ccd5d2-24d1-4ef4-911f-1838e00c2fa7" />
 
 
 
