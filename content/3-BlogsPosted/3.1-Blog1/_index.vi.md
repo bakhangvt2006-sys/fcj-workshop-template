@@ -4,7 +4,7 @@ title: "Blog 1"
 date: 2026-11-22
 weight: 3
 chapter: false
-pre: "<b> 3.1. </b>   "**
+pre: "<b> 3.1. </b>   "
 ---
 
 # SQS FIFO CÓ THỰC SỰ ĐẢM BẢO “EXACTLY-ONCE PROCESSING”?
