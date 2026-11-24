@@ -13,7 +13,7 @@ chapter: false
 
 &emsp; **Email:** bakhangvt2006@gmail.com
 
-&emsp; **Trường:** Đại Học FPT
+&emsp; **Trường:** Đại học FPT
 
 &emsp; **Ngành:** Công nghệ thông tin
 
