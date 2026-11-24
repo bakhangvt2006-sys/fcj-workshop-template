@@ -29,6 +29,7 @@ Các điểm chính cần nắm:
 Bài viết đặc biệt hữu ích cho những ai đang vận hành hệ thống trên AWS và muốn siết chặt việc cấp quyền, vì một quyền IAM nhỏ nhưng quá rộng cũng có thể dẫn đến hậu quả lớn.
 
 ### 
+<img width="1322" height="651" alt="IAM drawio (3)" src="https://github.com/user-attachments/assets/510ba855-3880-4153-a4c5-7386a4a09008" />
 
 https://www.facebook.com/share/p/1JTkReQuuU/
 
