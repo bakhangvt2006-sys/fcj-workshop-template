@@ -4,7 +4,7 @@ title: "Event 1"
 date: 2026-09-26
 weight: 1
 chapter: false
-pre: "  **4.1.**  "
+pre: " <b> 4.1. </b>  "
 ---
 
 # Event Report: “Buildrathon Kickoff: Code the Future with CMC Global”
