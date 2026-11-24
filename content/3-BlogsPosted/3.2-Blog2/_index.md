@@ -1,6 +1,6 @@
 ---
 title: "Blog 2"
-date: 202026-11-23
+date: 2026-11-23
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
