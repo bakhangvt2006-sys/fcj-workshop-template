@@ -12,7 +12,9 @@ chapter: false
 &emsp; **Số điện thoại:** 0971632265
 
 &emsp; **Email:** bakhangvt2006@gmail.com
+
 &emsp; **Trường:** Đại Học FPT
+
 &emsp; **Ngành:** Công nghệ thông tin
 
 &emsp; **Lớp:** AWS082025
