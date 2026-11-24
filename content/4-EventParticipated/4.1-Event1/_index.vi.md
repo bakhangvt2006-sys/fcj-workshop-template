@@ -47,7 +47,7 @@ Người tham dự
 
 ### Hình ảnh check-in
 <img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/0175bfc9-a0c1-41ea-9a5e-62fc148b92f5" />
-<img width="1920" height="2560" alt="image" src="https://github.com/user-attachments/assets/4a10b4ba-a793-489b-bcb8-4fb08425d6ef" />
+<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/4a10b4ba-a793-489b-bcb8-4fb08425d6ef" />
 
 
 
