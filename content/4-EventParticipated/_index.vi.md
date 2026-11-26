@@ -32,6 +32,17 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 
 
 ### [Event 3](4.3-Event3/)  
+&emsp;**Tên sự kiện:** First Cloud AI Journey: Weekly Meet Up  
+
+&emsp;**Ngày & Giờ:** 09:00 – 12:00, ngày 24/10/2026  
+
+&emsp;**Địa điểm:** Tầng 26 Bitexco Financial Tower, 2 Đ. Hải Triều, Sài Gòn, Hồ Chí Minh 700000, Việt Nam   
+
+&emsp;**Vai trò:** Người tham dự
+
+
+
+### [Event 4](4.4-Event4/)  
 &emsp;**Tên sự kiện:** Fireside Chat with Dr. Werner  
 
 &emsp;**Ngày & Giờ:** 08:30 – 12:00, ngày 02/10/2026  
@@ -40,13 +51,3 @@ Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là
 
 &emsp;**Vai trò:** Người tham dự  
 
-
-
-### [Event 4](4.4-Event4/)  
-&emsp;**Tên sự kiện:** First Cloud AI Journey: Weekly Meet Up  
-
-&emsp;**Ngày & Giờ:** 09:00 – 12:00, ngày 24/10/2026  
-
-&emsp;**Địa điểm:** Tầng 26 Bitexco Financial Tower, 2 Đ. Hải Triều, Sài Gòn, Hồ Chí Minh 700000, Việt Nam   
-
-&emsp;**Vai trò:** Người tham dự
