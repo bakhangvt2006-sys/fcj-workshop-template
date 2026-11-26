@@ -1,10 +1,10 @@
-\---
+---
 
 title: "Fireside Chat with Dr. Werner"
 date: 2026-2-10
 weight: 4
 chapter: false
-pre: "  **4.4.**  "
+pre: " <b>4.4.</b>  "
 ---
 
 # Báo cáo tổng kết: “Fireside Chat with Dr. Werner”
@@ -81,7 +81,8 @@ pre: "  **4.4.**  "
 
 #### Hình ảnh từ sự kiện
 
-*Thêm hình ảnh sự kiện tại đây*
+<img width="2560" height="1920" alt="image" src="https://github.com/user-attachments/assets/c35c5bd0-b4df-43e3-a043-5bd99aab17e0" />
+
 
 > Tóm lại, buổi fireside chat đã mang đến những góc nhìn sâu sắc từ Dr. Werner Vogels về hệ thống toàn cầu, Cloud, AI và sáng tạo đổi mới, đồng thời giúp mình mở rộng kết nối với cộng đồng công nghệ.
 
