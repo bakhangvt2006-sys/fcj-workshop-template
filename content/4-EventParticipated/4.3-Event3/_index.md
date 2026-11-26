@@ -107,7 +107,9 @@ On the morning of Saturday, October 24, 2026, on the 26th floor of Bitexco Finan
 
 #### Some event photos
 
-*Add event photos here*
+<img width="2560" height="1920" alt="image" src="https://github.com/user-attachments/assets/dbb2a9e7-e9d5-4f18-b6a8-cc3da658d7bf" />
+<img width="1920" height="2560" alt="image" src="https://github.com/user-attachments/assets/561f7ca3-276e-4a2c-b501-cb7de1e3a219" />
+
 
 > Overall, the meet-up delivered a great deal of practical insight through 5 high-quality sessions—from Voice AI and multi-account management to early pentesting and guardrails for Agents—while also energizing me to connect confidently and learn more.
 
