@@ -4,7 +4,7 @@ title: "Event 2"
 date: 2026-09-29
 weight: 2
 chapter: false
-pre: " <b> 4.1. </b>  "
+pre: " <b> 4.2. </b>  "
 ---
 
 # Event Report: “AWS Cloud \& AI Day Hanoi 2026”
