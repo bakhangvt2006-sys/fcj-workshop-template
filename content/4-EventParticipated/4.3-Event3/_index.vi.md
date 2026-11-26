@@ -4,7 +4,7 @@ title: "Event 3"
 date: 2026-10-24
 weight: 3
 chapter: false
-pre: "  **4.3.**  "
+pre: " <b> 4.3. </b>  "
 ---
 
 # Bài thu hoạch sự kiện: “First Cloud AI Journey: Weekly Meet Up”
