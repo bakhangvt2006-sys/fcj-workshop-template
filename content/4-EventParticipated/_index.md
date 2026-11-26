@@ -27,3 +27,25 @@ During my internship, I participated in two events. Each one was a memorable exp
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
 &emsp;**Role:** Attendee  
+
+
+
+### [Event 3](4.3-Event3/)  
+&emsp;**Event Name:** First Cloud AI Journey: Weekly Meet Up  
+
+&emsp;**Date & Time:** 09:00 – 12:00, October 24, 2026  
+
+&emsp;**Location:** 26th Floor Bitexco Financial Tower, 2 Hai Trieu Street, Saigon, Ho Chi Minh City 700000, Vietnam    
+
+&emsp;**Role:** Attendee
+
+
+
+### [Event 4](4.4-Event4/)  
+&emsp;**Event Name:** Fireside Chat with Dr. Werner  
+
+&emsp;**Date & Time:** 08:30 – 12:00, October 2, 2026  
+
+&emsp;**Location:** 26th Floor Bitexco Financial Tower, 2 Hai Trieu Street, Saigon, Ho Chi Minh City 700000, Vietnam  
+
+&emsp;**Role:** Attendee  
