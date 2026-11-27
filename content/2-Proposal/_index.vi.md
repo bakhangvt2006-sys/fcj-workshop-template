@@ -39,4 +39,3 @@ Với 300 báo cáo trong 30 ngày, gồm 90 ảnh và 60 email đến, dự to�
 ![Kiến trúc triển khai](/images/phishguard/architecture-final.png)
 
 [Giải thích sơ đồ](../5-workshop/overview/) · [Dự toán và minh chứng chi phí](../5-workshop/cost/)
-

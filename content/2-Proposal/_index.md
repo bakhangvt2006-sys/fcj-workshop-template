@@ -1,4 +1,4 @@
-﻿---
+---
 title: "2. Project proposal"
 weight: 2
 chapter: false
@@ -39,4 +39,3 @@ For a 30-day month with 300 reports, 90 images and 60 inbound emails, the model 
 ![Deployed architecture](/images/phishguard/architecture-final.png)
 
 [Architecture walkthrough](../5-workshop/overview/) · [Cost model and billing evidence](../5-workshop/cost/)
-

@@ -25,10 +25,10 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 14/09/2026 đến ngày 14/12/2026
 
-<<<<<<< HEAD
-=======
+
+
 ![Your profile picture](/images/avatar.jpg)
->>>>>>> 5c776f1 (Update picture)
+
 
 
 
