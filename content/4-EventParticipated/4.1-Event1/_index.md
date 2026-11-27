@@ -48,8 +48,7 @@ Participant
 * Wrap-up of key takeaways, learning resources, and upcoming community activities.
 
 ### Check-in Photos
-<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/0175bfc9-a0c1-41ea-9a5e-62fc148b92f5" />
-<img width="400" height="500" alt="image" src="https://github.com/user-attachments/assets/4a10b4ba-a793-489b-bcb8-4fb08425d6ef" />
+
 
 
 ### Lessons Learned
