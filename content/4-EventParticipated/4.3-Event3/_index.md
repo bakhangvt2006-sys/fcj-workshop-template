@@ -107,7 +107,7 @@ On the morning of Saturday, October 24, 2026, on the 26th floor of Bitexco Finan
 
 #### Some event photos
 
-![First Cloud AI Journey: Weekly Meet Up event photo](/static/images/4-EventParticipated/4.3-Event3/event3.jpg)  
+![First Cloud AI Journey: Weekly Meet Up event photo](/images/4-EventParticipated/4.3-Event3/event3.jpg)  
 
 
 

@@ -116,5 +116,5 @@ The event gave me a broad view of system modernization, agentic AI, and security
 * Security professionals must not only detect attacks but also know how to protect, monitor, and govern AI systems themselves.
 
 ### Check-in Photos
-![AWS Cloud & AI Day Hanoi 2026 event photo](/static/images/4-EventParticipated/4.2-Event2/event2.jpg)
+![AWS Cloud & AI Day Hanoi 2026 event photo](/images/4-EventParticipated/4.2-Event2/event2.jpg)
 

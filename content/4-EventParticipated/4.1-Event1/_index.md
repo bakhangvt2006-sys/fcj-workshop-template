@@ -48,7 +48,7 @@ Participant
 * Wrap-up of key takeaways, learning resources, and upcoming community activities.
 
 ### Check-in Photos
-![Ảnh sự kiện Buildrathon Kickoff](/static/images/4-EventParticipated/4.1-Event1/event1.jpg)
+![Ảnh sự kiện Buildrathon Kickoff](/images/4-EventParticipated/4.1-Event1/event1.jpg)
 
 ### Lessons Learned
 
