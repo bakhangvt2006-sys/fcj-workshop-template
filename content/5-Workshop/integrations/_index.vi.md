@@ -6,7 +6,7 @@ aliases:
   - /vi/5-workshop/05-email-ai/
 ---
 
-Dùng tài nguyên backend và hàm cập nhật stack đã tạo ở 5.3. Kiểm email đến và truy xuất tài liệu bằng hai phép thử riêng.
+Dùng tài taif nguyên backend và hàm cập nhật stack đã tạo ở 5.3. Kiểm email đến và truy xuất tài liệu bằng hai phép thử riêng.
 
 | Mục | Kết quả cần có |
 |---|---|
