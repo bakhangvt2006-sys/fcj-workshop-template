@@ -29,7 +29,6 @@ My takeaway: no automatic mechanism can replace proper management of identities,
 How do you manage AWS credentials for personal or team projects? Especially with GitHub Actions, do you use OIDC or still store access keys in GitHub Secrets? I'd love to hear real-world experience.
 
 ### 
-<img width="1376" height="768" alt="image" src="https://github.com/user-attachments/assets/b908f06d-ab57-4f0b-bb5c-1b40a05068d3" />
 
 
 
