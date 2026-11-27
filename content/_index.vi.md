@@ -25,8 +25,6 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 14/09/2026 đến ngày 14/12/2026
 
-<img width="780" height="1170" alt="image" src="https://github.com/user-attachments/assets/eca1d35b-32ee-41ea-ae3e-afb0b04ad83e" />
-
 
 
 
