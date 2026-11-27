@@ -116,7 +116,6 @@ The event gave me a broad view of system modernization, agentic AI, and security
 * Security professionals must not only detect attacks but also know how to protect, monitor, and govern AI systems themselves.
 
 ### Check-in Photos
-<img width="500" height="750" alt="image" src="https://github.com/user-attachments/assets/6b879863-b277-4418-9f71-932996846950" />
-<img width="500" height="750" alt="image" src="https://github.com/user-attachments/assets/b2ccd5d2-24d1-4ef4-911f-1838e00c2fa7" />
+
 
 
