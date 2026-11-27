@@ -81,7 +81,7 @@ pre: " <b>4.4.</b>  "
 
 #### Hình ảnh từ sự kiện
 
-<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/5fb74ca1-1a84-4f7b-80fe-ad0c68ed3436" />
+
 
 > Tóm lại, buổi fireside chat đã mang đến những góc nhìn sâu sắc từ Dr. Werner Vogels về hệ thống toàn cầu, Cloud, AI và sáng tạo đổi mới, đồng thời giúp mình mở rộng kết nối với cộng đồng công nghệ.
 
