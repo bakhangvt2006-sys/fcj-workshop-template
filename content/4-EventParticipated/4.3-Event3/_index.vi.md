@@ -106,8 +106,7 @@ Sáng thứ Bảy 24/10/2026 tại lầu 26, Bitexco Financial Tower, dù chỉ 
 * Sự tự tin trong kết nối, tinh thần chủ động và tính kiên trì học hỏi sẽ giúp hành trình Cloud của mình vững vàng và đầy động lực hơn.
 
 #### Một số hình ảnh sự kiện
-<img width="2560" height="1920" alt="image" src="https://github.com/user-attachments/assets/dbb2a9e7-e9d5-4f18-b6a8-cc3da658d7bf" />
-<img width="1920" height="2560" alt="image" src="https://github.com/user-attachments/assets/561f7ca3-276e-4a2c-b501-cb7de1e3a219" />
+
 
 
 
