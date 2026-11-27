@@ -31,8 +31,8 @@ Các điểm chính cần nắm:
 
 Kết luận: “exactly-once delivery/deduplication” ở tầng messaging khác với “exactly-once business effect” ở tầng ứng dụng. Muốn workflow đáng tin cậy, cần thiết kế cùng lúc FIFO semantics, visibility timeout, retry/DLQ, idempotency và kiểm soát side effects.
 
-### 
 
+![Blog 1 screenshot](/static/images/3-BlogsPosted/3.1-Blog1/blog1.png)
 
 https://www.facebook.com/share/p/1BmMVcWPia/
 

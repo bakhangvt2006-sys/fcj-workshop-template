@@ -116,6 +116,7 @@ Buổi sự kiện cho mình cái nhìn rộng về việc hiện đại hóa h�
 * Người làm bảo mật không chỉ phát hiện tấn công mà còn phải biết bảo vệ, giám sát và quản trị chính các hệ thống AI.
 
 ### Hình ảnh check-in
+![AWS Cloud & AI Day Hanoi 2026 event photo](/static/images/4-EventParticipated/4.2-Event2/event2.jpg)
 
 
 

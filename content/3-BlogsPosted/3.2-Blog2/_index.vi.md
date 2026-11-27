@@ -28,8 +28,8 @@ Các điểm chính cần nắm:
 
 Bài viết đặc biệt hữu ích cho những ai đang vận hành hệ thống trên AWS và muốn siết chặt việc cấp quyền, vì một quyền IAM nhỏ nhưng quá rộng cũng có thể dẫn đến hậu quả lớn.
 
-### 
 
+![Blog 2 screenshot](/static/images/3-BlogsPosted/3.2-Blog2/blog2.png)
 
 https://www.facebook.com/share/p/1JTkReQuuU/
 

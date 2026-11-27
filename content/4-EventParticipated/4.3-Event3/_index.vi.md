@@ -106,7 +106,7 @@ Sáng thứ Bảy 24/10/2026 tại lầu 26, Bitexco Financial Tower, dù chỉ 
 * Sự tự tin trong kết nối, tinh thần chủ động và tính kiên trì học hỏi sẽ giúp hành trình Cloud của mình vững vàng và đầy động lực hơn.
 
 #### Một số hình ảnh sự kiện
-
+![First Cloud AI Journey: Weekly Meet Up event photo](/static/images/4-EventParticipated/4.3-Event3/event3.jpg)  
 
 
 

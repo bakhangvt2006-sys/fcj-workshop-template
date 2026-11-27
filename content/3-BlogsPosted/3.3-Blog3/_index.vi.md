@@ -27,9 +27,8 @@ Các điểm chính cần nắm:
 Điều mình rút ra: không có cơ chế tự động nào thay thế được việc quản lý danh tính, quyền truy cập và credential đúng cách. Trong môi trường Cloud, bảo mật không chỉ là ngăn truy cập trái phép mà còn phải biết phát hiện, điều tra, cô lập và khôi phục khi sự cố xảy ra.
 
 Mọi người đang quản lý AWS credentials cho project cá nhân hoặc project nhóm như thế nào? Đặc biệt với GitHub Actions, mọi người dùng OIDC hay vẫn lưu access key trong GitHub Secrets? Mình muốn tham khảo thêm kinh nghiệm thực tế.
-
-### 
-
+ 
+![Blog 3 screenshot](/static/images/3-BlogsPosted/3.3-Blog3/blog3.png)
 
 
 https://www.facebook.com/share/p/1EAiomrDcV/

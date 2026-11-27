@@ -46,9 +46,7 @@ Người tham dự
 * Tổng kết các điểm chính, tài nguyên học tập và các hoạt động cộng đồng sắp tới.
 
 ### Hình ảnh check-in
-
-
-
+![Ảnh sự kiện Buildrathon Kickoff](/static/images/4-EventParticipated/4.1-Event1/event1.jpg)
 
 ### Bài học rút ra
 

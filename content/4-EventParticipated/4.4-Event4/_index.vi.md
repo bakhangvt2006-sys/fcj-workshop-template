@@ -81,7 +81,7 @@ pre: " <b>4.4.</b>  "
 
 #### Hình ảnh từ sự kiện
 
-
+![Fireside Chat with Dr. Werner event photo](/static/images/4-EventParticipated/4.4-Event4/event4.jpg)
 
 > Tóm lại, buổi fireside chat đã mang đến những góc nhìn sâu sắc từ Dr. Werner Vogels về hệ thống toàn cầu, Cloud, AI và sáng tạo đổi mới, đồng thời giúp mình mở rộng kết nối với cộng đồng công nghệ.
 
