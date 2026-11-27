@@ -28,6 +28,6 @@ Key points to remember:
 This post is especially useful for anyone operating systems on AWS who wants to tighten permission management, because a small but overly broad IAM permission can lead to major consequences.
 
 
-![Blog 2 screenshot](/static/images/3-BlogsPosted/3.2-Blog2/blog2.png)
+![Blog 2 screenshot](/images/3-BlogsPosted/3.2-Blog2/blog2.png)
 
 https://www.facebook.com/share/p/1JTkReQuuU/

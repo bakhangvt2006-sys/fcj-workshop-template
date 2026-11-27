@@ -32,7 +32,7 @@ Key points to remember:
 Conclusion: “exactly-once delivery/deduplication” at the messaging layer is different from “exactly-once business effect” at the application layer. A reliable workflow needs FIFO semantics, visibility timeout, retry/DLQ, idempotency, and side-effect control designed together.
 
 
-[Blog 1 screenshot](../images/3-BlogsPosted/3.1-Blog1/blog1.png)
+[Blog 1 screenshot](/images/3-BlogsPosted/3.1-Blog1/blog1.png)
 
 https://www.facebook.com/share/p/1BmMVcWPia/
 
