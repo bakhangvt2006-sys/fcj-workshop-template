@@ -81,7 +81,7 @@ Attending **"Fireside Chat with Dr. Werner"** at Bitexco Financial Tower was a m
 
 #### Event Photos
 
-<img width="2560" height="1920" alt="image" src="https://github.com/user-attachments/assets/5fb74ca1-1a84-4f7b-80fe-ad0c68ed3436" />
+
 
 
 > Overall, the fireside chat offered deep insights from Dr. Werner Vogels on global-scale systems, Cloud, AI, and innovation, and also helped me connect further with the tech community.
