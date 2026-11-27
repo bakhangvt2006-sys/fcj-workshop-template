@@ -28,8 +28,6 @@ chapter: false
 
 &emsp; **Internship Duration:** From 14/09/2026 to 14/12/2026
 
-<img width="780" height="1170" alt="image" src="https://github.com/user-attachments/assets/1a100550-c976-4ef3-b01e-0ee3974f741f" />
-
 
 ### Report Content
 
