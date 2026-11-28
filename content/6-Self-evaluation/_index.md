@@ -4,7 +4,7 @@ title: "Self-Assessment"
 date: 2026-11-25
 weight: 6
 chapter: false
-pre: "  **6.**  "
+pre: " <b>6. </b>  "
 ---
 
 During my internship at **First Cloud AI Journey (FCAJ)** from **14/09/2026** to **14/12/2026**, I had the opportunity to learn, practice, and apply the knowledge I gained at university in a real working environment.  

@@ -4,7 +4,7 @@ title: "Chia sẻ, đóng góp ý kiến"
 date: 2026-11-25
 weight: 7
 chapter: false
-pre: "  **7.**  "
+pre: " <b>7. </b>  "
 ---
 
 

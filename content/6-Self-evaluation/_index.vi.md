@@ -4,7 +4,7 @@ title: "Tự đánh giá"
 date: 2026-11-25
 weight: 6
 chapter: false
-pre: "  **6.**  "
+pre: " <b>6. </b>  "
 ---
 
 Trong thời gian thực tập tại **First Cloud AI Journey (FCAJ)** từ **14/09/2026** đến **14/12/2026**, tôi có dịp học hỏi, rèn luyện và đem những kiến thức đã học ở trường vào môi trường làm việc thực tế.  
