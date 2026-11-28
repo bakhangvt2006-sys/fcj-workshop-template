@@ -3,7 +3,7 @@ title: "Worklog"
 date: 2026-09-14
 weight: 1
 chapter: false
-pre: "  **1.**  "
+pre: "  <b> 1. </b>  "
 ---
 
 This page summarizes my **worklog** throughout my internship at First Cloud AI Journey. I completed the program in **11 weeks**, from **14/09/2026 to 27/11/2026**.
