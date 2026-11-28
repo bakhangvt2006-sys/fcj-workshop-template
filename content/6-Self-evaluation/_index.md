@@ -7,7 +7,7 @@ chapter: false
 pre: "  **6.**  "
 ---
 
-During my internship at **First Cloud AI Journey (FCAJ)** from **\14/09/2026** to **\14/12/2026**, I had the opportunity to learn, practice, and apply the knowledge I gained at university in a real working environment.  
+During my internship at **First Cloud AI Journey (FCAJ)** from **14/09/2026** to **14/12/2026**, I had the opportunity to learn, practice, and apply the knowledge I gained at university in a real working environment.  
 I took part in the **PhishGuard project on the AWS platform**, which helped me improve skills such as **learning and deploying AWS services, writing technical documentation, reporting on my work, and teamwork**.
 
 In terms of work ethic, I always tried to complete my assigned tasks, follow company rules, and communicate actively with my colleagues to make our work more effective.

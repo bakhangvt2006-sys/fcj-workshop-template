@@ -7,7 +7,7 @@ chapter: false
 pre: "  **6.**  "
 ---
 
-Trong thời gian thực tập tại **First Cloud AI Journey (FCAJ)** từ **\14/09/2026** đến **\14/12/2026**, tôi có dịp học hỏi, rèn luyện và đem những kiến thức đã học ở trường vào môi trường làm việc thực tế.  
+Trong thời gian thực tập tại **First Cloud AI Journey (FCAJ)** từ **14/09/2026** đến **14/12/2026**, tôi có dịp học hỏi, rèn luyện và đem những kiến thức đã học ở trường vào môi trường làm việc thực tế.  
 Tôi tham gia **dự án PhishGuard trên nền tảng AWS**, qua đó cải thiện các kỹ năng như **tìm hiểu và triển khai dịch vụ AWS, viết tài liệu kỹ thuật, báo cáo công việc và làm việc nhóm**.
 
 Về tác phong, tôi luôn cố gắng hoàn thành nhiệm vụ được giao, tuân thủ nội quy và chủ động trao đổi với đồng nghiệp để công việc đạt hiệu quả cao hơn.
