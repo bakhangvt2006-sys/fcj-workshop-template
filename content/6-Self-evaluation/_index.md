@@ -1,4 +1,4 @@
-\---
+---
 
 title: "Self-Assessment"
 date: 2026-11-25
