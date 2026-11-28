@@ -52,5 +52,5 @@ pre: " <b>1.7. </b>  "
   * Gửi, nhận, xóa message trong SQS và cấu hình dead-letter queue
   * Tạo rule EventBridge chạy Lambda theo lịch và gửi thông báo khi EC2 đổi trạng thái
 * Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
-* ...
+
 

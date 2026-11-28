@@ -32,7 +32,7 @@ pre: " <b>1.1. </b>  "
   * Monitoring (CloudWatch)
   * Serverless (Lambda)
   * AI/ML (Bedrock)
-  * ...
+
 * Đã tạo và cấu hình AWS Free Tier account thành công.
 * Làm quen với AWS Management Console và AWS CLI, biết cách tìm, truy cập và sử dụng dịch vụ từ giao diện web lẫn dòng lệnh.
 * Hoàn thành 5 bài thực hành cơ bản để nhận credit 100 USD:
@@ -49,5 +49,5 @@ pre: " <b>1.1. </b>  "
   * Security Group và Network ACL
   * ...
 * Hiểu cách các thành phần trong VPC kết hợp với nhau để xây dựng mạng cho tài nguyên AWS.
-* ...
+
 

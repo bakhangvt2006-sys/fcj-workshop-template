@@ -40,4 +40,4 @@ pre: " <b>1.11. </b>  "
   * WAF: filters malicious requests before they reach the application
 * Successfully built a small architecture with an ALB, an Auto Scaling group, and WAF, and drew the corresponding architecture diagram.
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+

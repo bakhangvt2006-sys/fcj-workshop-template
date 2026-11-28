@@ -47,5 +47,5 @@ pre: " <b>1.2. </b>  "
   * Tạo IAM user, group, policy, role và bật MFA
 * Biết cách cấp quyền cho EC2 truy cập S3 thông qua IAM role thay vì dùng access key.
 * Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
-* ...
+
 

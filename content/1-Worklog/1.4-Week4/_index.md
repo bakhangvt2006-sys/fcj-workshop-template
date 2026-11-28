@@ -41,4 +41,4 @@ pre: " <b>1.4. </b>  "
   * Created an EC2 CPU alarm and received alerts by email
   * Created a dashboard, looked up Event history, and created a trail
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+

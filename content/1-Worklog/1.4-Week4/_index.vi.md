@@ -41,4 +41,4 @@ pre: " <b>1.4. </b>  "
   * Tạo alarm CPU cho EC2 và nhận cảnh báo qua email
   * Tạo dashboard, tra cứu Event history và tạo trail
 * Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
-* ...
+

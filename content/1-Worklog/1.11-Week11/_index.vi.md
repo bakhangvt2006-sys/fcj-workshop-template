@@ -40,4 +40,4 @@ pre: " <b>1.11. </b>  "
   * WAF: lọc request độc hại trước khi vào ứng dụng
 * Đã dựng thành công một kiến trúc nhỏ gồm ALB, Auto Scaling group và WAF, và vẽ được sơ đồ kiến trúc tương ứng.
 * Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
-* ...
+

@@ -43,5 +43,5 @@ pre: " <b>1.10. </b>  "
   * Xác minh email và gửi email thử bằng SES
   * Tạo Web ACL và gắn vào CloudFront
 * Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
-* ...
+
 

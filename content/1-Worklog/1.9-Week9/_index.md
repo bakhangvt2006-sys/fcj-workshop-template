@@ -39,4 +39,4 @@ pre: " <b>1.9. </b>  "
   * Encrypted an S3 bucket with a KMS key
   * Created and viewed a secret in Secrets Manager
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+

@@ -39,4 +39,4 @@ pre: " <b>1.9. </b>  "
   * Mã hóa S3 bucket bằng KMS key
   * Tạo và xem secret trong Secrets Manager
 * Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
-* ...
+

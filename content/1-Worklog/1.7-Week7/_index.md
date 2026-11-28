@@ -52,5 +52,5 @@ pre: " <b>1.7. </b>  "
   * Sent, received, and deleted messages in SQS and configured a dead-letter queue
   * Created EventBridge rules that run Lambda on a schedule and send a notification when EC2 changes state
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+
 

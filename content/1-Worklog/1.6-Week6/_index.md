@@ -42,4 +42,4 @@ pre: " <b>1.6. </b>  "
   * Created an API with API Gateway, connected it to Lambda, and tested it with Postman or `curl`
   * Built a simple API combining API Gateway, Lambda, and DynamoDB
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+

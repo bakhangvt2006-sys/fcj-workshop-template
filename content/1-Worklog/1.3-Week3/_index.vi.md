@@ -50,5 +50,5 @@ pre: " <b>1.3. </b>  "
   * Tạo DynamoDB table, thao tác với item và tạo Global Secondary Index
   * Tạo hosted zone, record DNS và kiểm tra phân giải
 * Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
-* ...
+
 

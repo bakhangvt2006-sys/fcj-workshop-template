@@ -50,5 +50,5 @@ pre: " <b>1.3. </b>  "
   * Created a DynamoDB table, worked with items, and created a Global Secondary Index
   * Created a hosted zone and DNS records, and verified DNS resolution
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+
 

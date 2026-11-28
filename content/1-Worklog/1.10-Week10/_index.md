@@ -38,4 +38,4 @@ pre: " <b>1.10. </b>  "
   * Verified an email and sent a test email with SES
   * Created a Web ACL and associated it with CloudFront
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+

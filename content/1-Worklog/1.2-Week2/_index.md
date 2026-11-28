@@ -47,5 +47,5 @@ pre: " <b>1.2. </b>  "
   * Created IAM users, groups, policies, and roles, and enabled MFA
 * Learned how to grant an EC2 instance access to S3 through an IAM role instead of using access keys.
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+
 

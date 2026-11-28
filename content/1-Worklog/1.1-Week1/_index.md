@@ -30,7 +30,7 @@ pre: " <b>1.1. </b>  "
   * Monitoring (CloudWatch)
   * Serverless (Lambda)
   * AI/ML (Bedrock)
-  * ...
+
 * Successfully created and configured an AWS Free Tier account.
 * Became familiar with the AWS Management Console and AWS CLI, and learned how to find, access, and use services through both the web interface and the command line.
 * Completed 5 basic hands-on labs to earn 100 USD in credits:
@@ -47,5 +47,4 @@ pre: " <b>1.1. </b>  "
   * Security Group and Network ACL
   * ...
 * Understood how VPC components work together to build the network for AWS resources.
-* ...
 

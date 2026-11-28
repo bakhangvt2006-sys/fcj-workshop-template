@@ -42,4 +42,4 @@ pre: " <b>1.6. </b>  "
   * Tạo API bằng API Gateway, kết nối với Lambda và gọi thử bằng Postman hoặc `curl`
   * Xây dựng API đơn giản kết hợp API Gateway, Lambda và DynamoDB
 * Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
-* ...
+

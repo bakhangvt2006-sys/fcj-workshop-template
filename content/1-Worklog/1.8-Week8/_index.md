@@ -38,4 +38,4 @@ pre: " <b>1.8. </b>  "
   * EventBridge: routes events based on rules and runs tasks on a schedule
 * Successfully built an event-driven architecture combining multiple services and drew the corresponding architecture diagram.
 * Built the habit of cleaning up resources after practice to keep costs under control.
-* ...
+
