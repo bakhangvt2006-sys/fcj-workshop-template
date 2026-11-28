@@ -1,57 +1,44 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-10-05
+weight: 4
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: " <b>1.4. </b>  "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Gain a solid understanding of three services: Amazon CloudFront, Amazon CloudWatch, and AWS CloudTrail.
+* Learn how to deliver content quickly and securely through a network of edge locations.
+* Learn how to monitor resources, set up alarms, and track the history of actions in an AWS account.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+|Day|Task|Start Date|Completion Date|Reference Material|
+|-|-|-|-|-|
+|2|- Learn about **Amazon CloudFront** <br>&emsp; + Distribution and Edge locations <br>&emsp; + Origins (S3, Load Balancer, ...) <br>&emsp; + Cache behavior and TTL <br>&emsp; + Invalidation <br>&emsp; + Origin Access Control (OAC) and HTTPS|05/10/2026|05/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Learn about **Amazon CloudWatch** <br>&emsp; + Metrics <br>&emsp; + Logs (Log group, Log stream) <br>&emsp; + Alarms <br>&emsp; + Dashboards <br>&emsp; + CloudWatch Agent|06/10/2026|06/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Learn about **AWS CloudTrail** <br>&emsp; + Event history <br>&emsp; + Management events and Data events <br>&emsp; + Trails and storing logs in S3 <br>&emsp; + Differences between CloudTrail and CloudWatch|07/10/2026|07/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- **CloudFront hands-on:** <br>&emsp; + Create an S3 bucket hosting a static website <br>&emsp; + Create a CloudFront distribution with S3 as the origin <br>&emsp; + Configure OAC to block direct access to the bucket <br>&emsp; + Check cache hits / misses and perform an invalidation|08/10/2026|08/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **Combined hands-on with CloudWatch and CloudTrail:** <br>&emsp; + Create a CloudWatch alarm monitoring EC2 CPU and send an email via SNS <br>&emsp; + Create a dashboard showing key metrics <br>&emsp; + View Event history and find the actions of an IAM user <br>&emsp; + Create a trail that stores logs in S3 <br>&emsp; + Clean up resources to avoid unexpected costs|09/10/2026|09/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
 
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* Understood the basic concepts of Amazon CloudFront:
+  * Distribution, Edge locations, and Origins
+  * Cache behavior, TTL, and Invalidation
+  * Origin Access Control (OAC) and HTTPS
+* Understood the basic concepts of Amazon CloudWatch:
+  * Metrics, Logs, Alarms, and Dashboards
+  * CloudWatch Agent
+* Understood the basic concepts of AWS CloudTrail:
+  * Event history, Management events, and Data events
+  * Trails and storing logs in S3
+* Learned to distinguish CloudWatch (monitoring performance, logs, and alerts) from CloudTrail (recording who did what in the account).
+* Successfully completed the following hands-on tasks:
+  * Delivered a static website from S3 through CloudFront, blocking direct bucket access with OAC
+  * Created an EC2 CPU alarm and received alerts by email
+  * Created a dashboard, looked up Event history, and created a trail
+* Built the habit of cleaning up resources after practice to keep costs under control.
 * ...

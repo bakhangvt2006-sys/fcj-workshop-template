@@ -1,57 +1,42 @@
 ---
 title: "Week 9 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-11-09
+weight: 9
 chapter: false
-pre: " <b> 1.9. </b> "
+pre: " <b>1.9. </b>  "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 9 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Gain foundational knowledge of Elastic Load Balancing (ELB) and EC2 Auto Scaling.
+* Gain foundational knowledge of AWS KMS and AWS Secrets Manager.
+* Complete simple hands-on labs to get familiar with each service.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+|Day|Task|Start Date|Completion Date|Reference Material|
+|-|-|-|-|-|
+|2|- Learn about **Elastic Load Balancing (ELB)** <br>&emsp; + Application Load Balancer (ALB) and Network Load Balancer (NLB) <br>&emsp; + Listeners and Target groups <br>&emsp; + Health checks|09/11/2026|09/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Learn about **EC2 Auto Scaling** <br>&emsp; + Launch template <br>&emsp; + Auto Scaling group (min, desired, max) <br>&emsp; + Scaling policies <br>&emsp; + Integration with ELB|10/11/2026|10/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Learn about **AWS KMS** and **AWS Secrets Manager** <br>&emsp; + KMS: encryption keys (AWS managed key, customer managed key) <br>&emsp; + Encrypting data on S3, EBS, RDS <br>&emsp; + Secrets Manager: storing and retrieving passwords and API keys|11/11/2026|11/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- **ELB and Auto Scaling hands-on (simple):** <br>&emsp; + Create a Launch template for an EC2 web server <br>&emsp; + Create an Auto Scaling group with 2 instances <br>&emsp; + Create an Application Load Balancer and a Target group <br>&emsp; + Open the ALB DNS name to check the web page|12/11/2026|12/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **KMS and Secrets Manager hands-on (simple):** <br>&emsp; + Create a KMS key <br>&emsp; + Enable KMS encryption for an S3 bucket and upload a test file <br>&emsp; + Create a secret in Secrets Manager and view its value <br>&emsp; + Clean up resources to avoid unexpected costs|13/11/2026|13/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
 
 
 ### Week 9 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* Understood the basic concepts of Elastic Load Balancing:
+  * Load balancer types (ALB, NLB)
+  * Listeners, Target groups, and Health checks
+* Understood the basic concepts of EC2 Auto Scaling:
+  * Launch template and Auto Scaling group
+  * Scaling policies and integration with ELB
+* Understood the basic concepts of AWS KMS and Secrets Manager:
+  * KMS keys and encrypting data across AWS services
+  * Storing and retrieving secrets securely instead of hard-coding them
+* Successfully completed the following hands-on tasks:
+  * Built an ALB that distributes requests to EC2 instances managed by an Auto Scaling group
+  * Encrypted an S3 bucket with a KMS key
+  * Created and viewed a secret in Secrets Manager
+* Built the habit of cleaning up resources after practice to keep costs under control.
 * ...

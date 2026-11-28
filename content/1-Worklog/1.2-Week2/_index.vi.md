@@ -1,27 +1,51 @@
 ---
 title: "Worklog Tuần 2"
-date: 2025-08-18
+date: 2026-09-21
 weight: 2
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: " <b>1.2. </b>  "
 ---
 
 ### Mục tiêu tuần 2:
 
-* Hiểu kiến thức nền tảng về mạng trên AWS.
-* Tự xây dựng được một VPC hoàn chỉnh.
+* Nắm vững kiến thức cơ bản về 3 dịch vụ nền tảng của AWS: IAM, S3 và EC2.
+* Thực hành tạo và quản lý tài nguyên từng dịch vụ trên AWS Console và AWS CLI.
+* Biết cách kết hợp IAM, S3 và EC2 để các dịch vụ truy cập nhau một cách an toàn.
 
-### Các công việc được thực hiện trong tuần này:
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| --- | --------- | ------------ | --------------- | -------------- |
-| 2 | - Tìm hiểu VPC, CIDR, Subnet (public/private) | 18/08/2025 | 18/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Tìm hiểu Route Table, Internet Gateway, NAT Gateway | 19/08/2025 | 19/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Tìm hiểu Security Group và Network ACL <br> - So sánh stateful và stateless | 20/08/2025 | 20/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - **Thực hành:** tạo VPC, subnet, route table, IGW | 21/08/2025 | 21/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - **Thực hành:** triển khai EC2 ở public/private subnet, kiểm tra kết nối <br> - Tìm hiểu VPC Peering | 22/08/2025 | 22/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc cần triển khai trong tuần này:
+
+|Thứ|Công việc|Ngày bắt đầu|Ngày hoàn thành|Nguồn tài liệu|
+|-|-|-|-|-|
+|2|- Tìm hiểu **IAM** <br>  + User, Group <br>  + Role <br>  + Policy (JSON) <br>  + Nguyên tắc least privilege <br>  + Root account và MFA|21/09/2026|21/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Tìm hiểu **Amazon S3** <br>  + Bucket và Object <br>  + Các lớp lưu trữ (Storage classes) <br>  + Versioning <br>  + Bucket policy và quyền truy cập <br> - **Thực hành:** <br>  + Tạo bucket <br>  + Upload, download và xóa object|22/09/2026|22/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Tìm hiểu **Amazon EC2** <br>  + Instance types <br>  + AMI <br>  + EBS volume <br>  + Security Group <br>  + Elastic IP <br> - **Thực hành:** <br>  + Tạo EC2 instance <br>  + Kết nối SSH <br>  + Gắn EBS volume|23/09/2026|23/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- **Thực hành IAM:** <br>  + Tạo IAM user và group <br>  + Gán policy theo nguyên tắc least privilege <br>  + Bật MFA cho tài khoản <br>  + Tạo IAM role cho EC2|24/09/2026|24/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **Thực hành kết hợp IAM, S3 và EC2:** <br>  + Gắn IAM role vào EC2 instance <br>  + Từ EC2 truy cập S3 bằng AWS CLI (không dùng access key) <br>  + Kiểm tra quyền truy cập đúng và sai <br>  + Dọn dẹp tài nguyên để tránh phát sinh chi phí|25/09/2026|25/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+
+
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu cách thiết kế VPC với public/private subnet.
-* Phân biệt được Security Group và NACL.
-* Dựng thành công VPC và kiểm tra kết nối giữa các instance.
+* Hiểu và phân biệt được các thành phần của IAM:
+
+  * User, Group, Role
+  * Policy và nguyên tắc least privilege
+  * Root account và MFA
+* Nắm được kiến thức cơ bản về Amazon S3:
+
+  * Bucket, Object và các lớp lưu trữ
+  * Versioning
+  * Bucket policy và quyền truy cập
+* Nắm được kiến thức cơ bản về Amazon EC2:
+
+  * Instance types, AMI, EBS volume
+  * Security Group và Elastic IP
+* Đã thực hành thành công:
+
+  * Tạo bucket S3, upload, download và xóa object
+  * Tạo EC2 instance, kết nối SSH và gắn EBS volume
+  * Tạo IAM user, group, policy, role và bật MFA
+* Biết cách cấp quyền cho EC2 truy cập S3 thông qua IAM role thay vì dùng access key.
+* Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
+* ...
+

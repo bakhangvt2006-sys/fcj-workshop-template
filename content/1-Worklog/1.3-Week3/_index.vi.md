@@ -1,59 +1,54 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-09-28
+weight: 3
 chapter: false
-pre: " <b> 1.3. </b> "
+pre: " <b>1.3. </b>  "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững kiến thức cơ bản về 3 dịch vụ: Amazon RDS, Amazon DynamoDB và Amazon Route 53.
+* Phân biệt được cơ sở dữ liệu quan hệ (RDS) và cơ sở dữ liệu NoSQL (DynamoDB), biết khi nào nên dùng loại nào.
+* Thực hành tạo và quản lý cơ sở dữ liệu, cấu hình DNS và kết nối các dịch vụ với nhau.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+|Thứ|Công việc|Ngày bắt đầu|Ngày hoàn thành|Nguồn tài liệu|
+|-|-|-|-|-|
+|2|- Tìm hiểu **Amazon RDS** <br>  + Các database engine (MySQL, PostgreSQL, ...) <br>  + Instance class và storage <br>  + DB subnet group và Security Group <br>  + Multi-AZ và Read Replica <br>  + Backup và Snapshot|28/09/2026|28/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Tìm hiểu **Amazon DynamoDB** <br>  + Table, Item, Attribute <br>  + Partition key và Sort key <br>  + Capacity mode (On-demand / Provisioned) <br>  + Secondary Index (GSI, LSI) <br>  + TTL <br> - **Thực hành:** <br>  + Tạo table <br>  + Thêm, sửa, xóa và truy vấn item<br />- Tham gia sự kiện|29/09/2026|29/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Tìm hiểu **Amazon Route 53** <br>  + Hosted zone <br>  + Các loại record (A, AAAA, CNAME, MX, Alias) <br>  + Routing policy (Simple, Weighted, Latency, Failover) <br>  + Health check|30/09/2026|30/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- **Thực hành RDS:** <br>  + Tạo RDS instance trong private subnet <br>  + Kết nối từ EC2 vào database <br>  + Tạo snapshot và khôi phục <br>  + Tìm hiểu Multi-AZ và Read Replica trên Console|01/10/2026|01/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **Thực hành kết hợp DynamoDB và Route 53:** <br>  + Tạo Global Secondary Index cho DynamoDB table <br>  + So sánh Query và Scan <br>  + Tạo hosted zone và record trỏ về EC2 <br>  + Kiểm tra phân giải DNS bằng `nslookup` <br>  + Dọn dẹp tài nguyên để tránh phát sinh chi phí|02/10/2026|02/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+
 
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu được các khái niệm cơ bản của Amazon RDS:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+  * Database engine, instance class và storage
+  * DB subnet group và Security Group
+  * Multi-AZ, Read Replica
+  * Backup và Snapshot
+* Hiểu được các khái niệm cơ bản của Amazon DynamoDB:
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+  * Table, Item, Attribute
+  * Partition key, Sort key
+  * Capacity mode (On-demand / Provisioned)
+  * Secondary Index và TTL
+* Hiểu được các khái niệm cơ bản của Amazon Route 53:
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+  * Hosted zone và các loại record
+  * Routing policy
+  * Health check
+* Phân biệt được khi nào dùng RDS (dữ liệu quan hệ, truy vấn phức tạp) và khi nào dùng DynamoDB (truy cập nhanh theo key, dễ mở rộng).
+* Đã thực hành thành công:
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
+  * Tạo RDS instance, kết nối từ EC2, tạo snapshot và khôi phục
+  * Tạo DynamoDB table, thao tác với item và tạo Global Secondary Index
+  * Tạo hosted zone, record DNS và kiểm tra phân giải
+* Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
 * ...
-
 

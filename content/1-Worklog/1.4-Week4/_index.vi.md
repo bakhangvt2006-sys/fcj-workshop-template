@@ -1,59 +1,44 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+date: 2026-10-05
+weight: 4
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: " <b>1.4. </b>  "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững kiến thức cơ bản về 3 dịch vụ: Amazon CloudFront, Amazon CloudWatch và AWS CloudTrail.
+* Biết cách phân phối nội dung nhanh và an toàn thông qua mạng lưới edge location.
+* Biết cách giám sát tài nguyên, đặt cảnh báo và theo dõi lịch sử thao tác trên tài khoản AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+|Thứ|Công việc|Ngày bắt đầu|Ngày hoàn thành|Nguồn tài liệu|
+|-|-|-|-|-|
+|2|- Tìm hiểu **Amazon CloudFront** <br>&emsp; + Distribution và Edge location <br>&emsp; + Origin (S3, Load Balancer, ...) <br>&emsp; + Cache behavior và TTL <br>&emsp; + Invalidation <br>&emsp; + Origin Access Control (OAC) và HTTPS|05/10/2026|05/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Tìm hiểu **Amazon CloudWatch** <br>&emsp; + Metrics <br>&emsp; + Logs (Log group, Log stream) <br>&emsp; + Alarms <br>&emsp; + Dashboards <br>&emsp; + CloudWatch Agent|06/10/2026|06/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Tìm hiểu **AWS CloudTrail** <br>&emsp; + Event history <br>&emsp; + Management events và Data events <br>&emsp; + Trail và lưu log vào S3 <br>&emsp; + Phân biệt CloudTrail và CloudWatch|07/10/2026|07/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- **Thực hành CloudFront:** <br>&emsp; + Tạo S3 bucket chứa website tĩnh <br>&emsp; + Tạo CloudFront distribution với origin là S3 <br>&emsp; + Cấu hình OAC để chặn truy cập trực tiếp vào bucket <br>&emsp; + Kiểm tra cache hit / miss và thực hiện invalidation|08/10/2026|08/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **Thực hành kết hợp CloudWatch và CloudTrail:** <br>&emsp; + Tạo CloudWatch alarm theo dõi CPU của EC2 và gửi email qua SNS <br>&emsp; + Tạo dashboard hiển thị các chỉ số chính <br>&emsp; + Xem Event history và tìm thao tác của một IAM user <br>&emsp; + Tạo trail lưu log vào S3 <br>&emsp; + Dọn dẹp tài nguyên để tránh phát sinh chi phí|09/10/2026|09/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
 
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
+* Hiểu được các khái niệm cơ bản của Amazon CloudFront:
+  * Distribution, Edge location và Origin
+  * Cache behavior, TTL và Invalidation
+  * Origin Access Control (OAC) và HTTPS
+* Hiểu được các khái niệm cơ bản của Amazon CloudWatch:
+  * Metrics, Logs, Alarms và Dashboards
+  * CloudWatch Agent
+* Hiểu được các khái niệm cơ bản của AWS CloudTrail:
+  * Event history, Management events và Data events
+  * Trail và lưu log vào S3
+* Phân biệt được CloudWatch (giám sát hiệu năng, log và cảnh báo) với CloudTrail (ghi lại ai đã làm gì trên tài khoản).
+* Đã thực hành thành công:
+  * Phân phối website tĩnh từ S3 qua CloudFront, chặn truy cập trực tiếp vào bucket bằng OAC
+  * Tạo alarm CPU cho EC2 và nhận cảnh báo qua email
+  * Tạo dashboard, tra cứu Event history và tạo trail
+* Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
 * ...
-
-

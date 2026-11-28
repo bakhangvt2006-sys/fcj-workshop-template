@@ -1,57 +1,41 @@
 ---
 title: "Week 10 Worklog"
-date: 2024-01-01
-weight: 2
+date: 2026-11-16
+weight: 10
 chapter: false
-pre: " <b> 1.10. </b> "
+pre: " <b>1.10. </b>  "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Gain foundational knowledge of Amazon Bedrock, Amazon SES, and AWS WAF.
+* Complete simple hands-on labs to get familiar with each service.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+|Day|Task|Start Date|Completion Date|Reference Material|
+|-|-|-|-|-|
+|2|- Learn about **Amazon Bedrock** <br>&emsp; + What a foundation model is <br>&emsp; + Models available on Bedrock <br>&emsp; + How to invoke a model and the required IAM permissions <br>&emsp; + Pricing|16/11/2026|16/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Learn about **Amazon SES** <br>&emsp; + Verifying identities (email, domain) <br>&emsp; + Sandbox mode <br>&emsp; + How to send emails <br>&emsp; + Bounces and complaints|17/11/2026|17/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Learn about **AWS WAF** <br>&emsp; + Web ACL and Rules <br>&emsp; + Managed rule groups <br>&emsp; + Rate-based rules <br>&emsp; + Associating WAF with CloudFront or an ALB|18/11/2026|18/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- **Bedrock and SES hands-on (simple):** <br>&emsp; + Try a Q&A conversation with a model in the Bedrock Playground <br>&emsp; + Verify an email address in SES <br>&emsp; + Send a test email from the SES Console|19/11/2026|19/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **WAF hands-on (simple):** <br>&emsp; + Create a Web ACL with a managed rule <br>&emsp; + Associate the Web ACL with a CloudFront distribution <br>&emsp; + Clean up resources to avoid unexpected costs|20/11/2026|20/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
 
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* Understood the basic concepts of Amazon Bedrock:
+  * Foundation models and the models available
+  * How to invoke a model and the required IAM permissions
+* Understood the basic concepts of Amazon SES:
+  * Identity verification and sandbox mode
+  * How to send emails, bounces, and complaints
+* Understood the basic concepts of AWS WAF:
+  * Web ACL, Rules, and Managed rule groups
+  * Rate-based rules and how to associate WAF with CloudFront or an ALB
+* Successfully completed the following hands-on tasks:
+  * Tried a model in the Bedrock Playground
+  * Verified an email and sent a test email with SES
+  * Created a Web ACL and associated it with CloudFront
+* Built the habit of cleaning up resources after practice to keep costs under control.
 * ...

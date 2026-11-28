@@ -1,57 +1,51 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-09-21
+weight: 2
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: " <b>1.2. </b>  "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Gain a solid understanding of three foundational AWS services: IAM, S3, and EC2.
+* Practice creating and managing resources for each service using the AWS Console and AWS CLI.
+* Learn how to combine IAM, S3, and EC2 so that services can access each other securely.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+|Day|Task|Start Date|Completion Date|Reference Material|
+|-|-|-|-|-|
+|2|- Learn about **IAM** <br>  + Users and Groups <br>  + Roles <br>  + Policies (JSON) <br>  + Principle of least privilege <br>  + Root account and MFA|21/09/2026|21/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Learn about **Amazon S3** <br>  + Buckets and Objects <br>  + Storage classes <br>  + Versioning <br>  + Bucket policy and access control <br> - **Hands-on:** <br>  + Create a bucket <br>  + Upload, download, and delete objects|22/09/2026|22/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Learn about **Amazon EC2** <br>  + Instance types <br>  + AMI <br>  + EBS volumes <br>  + Security Group <br>  + Elastic IP <br> - **Hands-on:** <br>  + Create an EC2 instance <br>  + Connect via SSH <br>  + Attach an EBS volume|23/09/2026|23/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- **IAM hands-on:** <br>  + Create IAM users and groups <br>  + Assign policies following the principle of least privilege <br>  + Enable MFA for the account <br>  + Create an IAM role for EC2|24/09/2026|24/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **Combined hands-on with IAM, S3, and EC2:** <br>  + Attach an IAM role to an EC2 instance <br>  + Access S3 from EC2 using the AWS CLI (without access keys) <br>  + Test allowed and denied access <br>  + Clean up resources to avoid unexpected costs|25/09/2026|25/09/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+
 
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Understood and distinguished the components of IAM:
 
-* Successfully created and configured an AWS Free Tier account.
+  * Users, Groups, and Roles
+  * Policies and the principle of least privilege
+  * Root account and MFA
+* Gained foundational knowledge of Amazon S3:
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+  * Buckets, Objects, and storage classes
+  * Versioning
+  * Bucket policy and access control
+* Gained foundational knowledge of Amazon EC2:
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+  * Instance types, AMI, and EBS volumes
+  * Security Group and Elastic IP
+* Successfully completed the following hands-on tasks:
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+  * Created an S3 bucket, and uploaded, downloaded, and deleted objects
+  * Created an EC2 instance, connected via SSH, and attached an EBS volume
+  * Created IAM users, groups, policies, and roles, and enabled MFA
+* Learned how to grant an EC2 instance access to S3 through an IAM role instead of using access keys.
+* Built the habit of cleaning up resources after practice to keep costs under control.
 * ...
+

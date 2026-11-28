@@ -1,59 +1,47 @@
 ---
 title: "Worklog Tuần 10"
-date: 2024-01-01
-weight: 2
+date: 2026-11-16
+weight: 10
 chapter: false
-pre: " <b> 1.10. </b> "
+pre: " <b>1.10. </b>  "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm kiến thức cơ bản về Amazon Bedrock, Amazon SES và AWS WAF.
+* Thực hành các bài lab đơn giản để làm quen với từng dịch vụ.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+|Thứ|Công việc|Ngày bắt đầu|Ngày hoàn thành|Nguồn tài liệu|
+|-|-|-|-|-|
+|2|- Tìm hiểu **Amazon Bedrock** <br>  + Foundation model là gì <br>  + Các model có sẵn trên Bedrock <br>  + Cách gọi model và quyền IAM cần thiết <br>  + Cách tính phí|16/11/2026|16/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Tìm hiểu **Amazon SES** <br>  + Xác minh danh tính (email, domain) <br>  + Chế độ sandbox <br>  + Cách gửi email <br>  + Bounce và complaint|17/11/2026|17/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Tìm hiểu **AWS WAF** <br>  + Web ACL và Rule <br>  + Managed rule group <br>  + Rate-based rule <br>  + Gắn WAF với CloudFront hoặc ALB|18/11/2026|18/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- **Thực hành Bedrock và SES (đơn giản):** <br>  + Thử hỏi đáp với một model trong Bedrock Playground <br>  + Xác minh một địa chỉ email trong SES <br>  + Gửi thử một email từ SES Console|19/11/2026|19/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **Thực hành WAF (đơn giản):** <br>  + Tạo Web ACL với một managed rule <br>  + Gắn Web ACL vào CloudFront distribution <br>  + Dọn dẹp tài nguyên để tránh phát sinh chi phí|20/11/2026|20/11/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+
 
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu được các khái niệm cơ bản của Amazon Bedrock:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+  * Foundation model và các model có sẵn
+  * Cách gọi model và quyền IAM cần thiết
+* Hiểu được các khái niệm cơ bản của Amazon SES:
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+  * Xác minh danh tính và chế độ sandbox
+  * Cách gửi email, bounce và complaint
+* Hiểu được các khái niệm cơ bản của AWS WAF:
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+  * Web ACL, Rule và Managed rule group
+  * Rate-based rule và cách gắn WAF với CloudFront hoặc ALB
+* Đã thực hành thành công:
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
+  * Dùng thử model trong Bedrock Playground
+  * Xác minh email và gửi email thử bằng SES
+  * Tạo Web ACL và gắn vào CloudFront
+* Có thói quen dọn dẹp tài nguyên sau khi thực hành để kiểm soát chi phí.
 * ...
-
 

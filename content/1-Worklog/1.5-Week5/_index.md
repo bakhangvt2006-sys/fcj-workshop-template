@@ -1,57 +1,40 @@
 ---
 title: "Week 5 Worklog"
-date: 2024-01-01
-weight: 1
+date: 2026-10-12
+weight: 5
 chapter: false
-pre: " <b> 1.5. </b> "
+pre: " <b>1.5. </b>  "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Review and consolidate the knowledge of the AWS services learned during the first 4 weeks.
+* Strengthen weaker areas by practicing again and explaining concepts in my own words.
+* Combine multiple services to build a small, complete architecture on AWS.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+|Day|Task|Start Date|Completion Date|Reference Material|
+|-|-|-|-|-|
+|2|- Review the **Networking & Security** group <br>&emsp; + VPC, CIDR block, Subnets (public / private) <br>&emsp; + Route table, Internet Gateway, NAT Gateway <br>&emsp; + Security Group and Network ACL <br>&emsp; + IAM: Users, Groups, Roles, Policies, MFA|12/10/2026|12/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|3|- Review the **Compute & Storage** group <br>&emsp; + Amazon EC2: Instance types, AMI, EBS, Elastic IP, SSH connection <br>&emsp; + Amazon S3: Buckets, Storage classes, Versioning, Bucket policy|13/10/2026|13/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|4|- Review the **Database & DNS** group <br>&emsp; + Amazon RDS: Multi-AZ, Read Replica, Snapshot <br>&emsp; + Amazon DynamoDB: Partition key, Sort key, GSI, Capacity mode <br>&emsp; + Amazon Route 53: Hosted zone, Records, Routing policies|14/10/2026|14/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|5|- Review the **Content Delivery & Monitoring** group <br>&emsp; + Amazon CloudFront: Distribution, Cache, OAC <br>&emsp; + Amazon CloudWatch: Metrics, Logs, Alarms <br>&emsp; + AWS CloudTrail: Event history, Trail <br> - Redo the labs from previous weeks that I was less confident about|15/10/2026|15/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
+|6|- **Comprehensive hands-on:** build a small architecture on AWS <br>&emsp; + A VPC with a public subnet and a private subnet <br>&emsp; + An EC2 web server in the public subnet and RDS in the private subnet <br>&emsp; + An IAM role for EC2 to access S3 <br>&emsp; + S3 and CloudFront for static content <br>&emsp; + CloudWatch alarms and CloudTrail for monitoring <br>&emsp; + Draw the architecture diagram and clean up resources to avoid unexpected costs|16/10/2026|16/10/2026|[https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)|
 
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* Consolidated the knowledge of all learned services into groups:
+  * Networking & Security: VPC, IAM
+  * Compute & Storage: EC2, S3
+  * Database & DNS: RDS, DynamoDB, Route 53
+  * Content Delivery & Monitoring: CloudFront, CloudWatch, CloudTrail
+* Strengthened weaker areas and redid the important labs.
+* Understood the role of each service and how they connect within a system:
+  * Users reach the application through Route 53 and CloudFront
+  * EC2 runs the application and retrieves data from RDS, DynamoDB, and S3
+  * IAM controls access, while CloudWatch and CloudTrail monitor the system
+* Successfully built a small architecture combining multiple services and drew the corresponding architecture diagram.
+* Built the habit of cleaning up resources after practice to keep costs under control.
 * ...
